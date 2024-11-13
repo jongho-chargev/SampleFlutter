@@ -76,7 +76,6 @@ current_commit=$(git rev-parse HEAD)
 echo "current_commit $current_commit"
 
 url="https://api.notion.com/v1/blocks/$page_id/children"
-echo "url https://api.notion.com/v1/blocks/13c5b59200098071bd2cf655e6a8be0a/children"
 echo "url $url"
 
 body='{
@@ -101,5 +100,22 @@ body='{
     ]
 }'
 
+response_write=$(curl -X PATCH "${header_args[@]}" -d "$body" "$url")
+echo $response_write
+
+
+
+body='{
+    "properties": {
+        "상태" :{
+            "type": "status",
+            "status": {
+                "name": "개발완료"
+            }
+        }
+    }
+}'
+url="https://api.notion.com/v1/pages/$page_id"
+echo "url $url"
 response_write=$(curl -X PATCH "${header_args[@]}" -d "$body" "$url")
 echo $response_write
