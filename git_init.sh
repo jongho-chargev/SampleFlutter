@@ -27,4 +27,6 @@ chmod +x .git/hooks/prepare-commit-msg
 
 chmod +x .git/hooks/post-receive
 
+chmod +x .git/hooks/pre-push
+
 echo "Git repository initialized and prepare-commit-msg hook set up."
