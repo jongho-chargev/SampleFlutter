@@ -25,4 +25,6 @@ EOF
 # prepare-commit-msg 훅에 실행 권한 부여
 chmod +x .git/hooks/prepare-commit-msg
 
+chmod +x .git/hooks/post-receive
+
 echo "Git repository initialized and prepare-commit-msg hook set up."
