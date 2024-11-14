@@ -119,3 +119,4 @@ url="https://api.notion.com/v1/pages/$page_id"
 echo "url $url"
 response_write=$(curl -X PATCH "${header_args[@]}" -d "$body" "$url")
 echo $response_write
+
