@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:sample_gs/core/extensions.dart';
 import 'package:sample_gs/pages/root.dart';
 
 void main() {
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    "test".log;
     return MaterialApp(
       title: 'Flutter TEST',
       localizationsDelegates: const [

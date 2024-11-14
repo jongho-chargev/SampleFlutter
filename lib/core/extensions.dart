@@ -35,7 +35,7 @@ extension NumberParsing on String {
 
 var logger = Logger(
   printer: PrettyPrinter(
-      stackTraceBeginIndex: 2, methodCount: 2, noBoxingByDefault: true),
+      stackTraceBeginIndex: 1, methodCount: 3, noBoxingByDefault: true),
 );
 
 extension StringExtension on String {
@@ -44,12 +44,12 @@ extension StringExtension on String {
   }
 
   String get log {
-    logger.i(this);
+    logger.e(this);
     return this;
   }
 }
 
-extension WidgetEvExtension on Widget {
+extension WidgetEvExtension on Widget? {
   Widget padding({
     double? all,
     double? vertical,

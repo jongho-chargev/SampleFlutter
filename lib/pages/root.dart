@@ -39,6 +39,7 @@ class _RootPageState extends State<RootPage> {
   }
 
   Widget dialogWidget() {
+    'Log message with3 methods'.log;
     return Container(
       child: Column(
         mainAxisSize: MainAxisSize.min,
@@ -78,7 +79,7 @@ class _RootPageState extends State<RootPage> {
               'You have pushed the button this many times:',
             ),
             20.height,
-            Button(ontap: () {}).padding(all: 20).center(),
+            Button(ontap: () {}).padding(vertical: 30).center(),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
