@@ -120,3 +120,4 @@ echo "url $url"
 response_write=$(curl -X PATCH "${header_args[@]}" -d "$body" "$url")
 echo $response_write
 
+echo 'set'
