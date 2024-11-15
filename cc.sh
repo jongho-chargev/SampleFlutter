@@ -26,6 +26,9 @@ esac
 echo "변경된 브랜치 타입: $issue_type"
 
 
+echo "TEST"
+
+
 
 
 
