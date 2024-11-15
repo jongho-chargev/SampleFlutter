@@ -26,8 +26,6 @@ echo "Develop Branch: $develop_branch"
 echo "Feature Branch: $feature_branch"
 
 
-
-
 # HTTP 요청 헤더
 headers=( 
     "Authorization: Bearer $token" 
